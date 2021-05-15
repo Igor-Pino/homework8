@@ -1,0 +1,37 @@
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  
+  .features-list__item {
+    flex-basis: calc((100% - 30px * 4) / 4);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  
+  .features-card__title {
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $title-text-color;
+  }
+  
+  .features-card__paragraph {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $primary-text-color;
+  }
+  
+  .features-card__thumb {
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    
+    background-color: $accent-background-color;
+  }
+  
