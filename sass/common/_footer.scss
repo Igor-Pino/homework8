@@ -5,13 +5,70 @@
   }
   
   .footer-container {
-    display: flex; 
-    align-items: baseline; 
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+    
+      align-items: center;
+    
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: inline-flex;
+      flex-wrap: nowrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex; 
+      
+      align-items: baseline; 
+      padding-top: 60px;
+      padding-bottom: 60px;
+
+    }
   }
   
+  .footer-contacts {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: inline-flex;
+      
+      margin-right: 165px;
+
+    }
+
+    @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+  }
+
+  
+
+  .footer-contacts__list {
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 60px;
+     
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media screen and (min-width: 1200px) {
+        display: inline-flex;
+      }
+    }
+    
+    
+  }
+
   .footer-contacts__address {
+
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -28,9 +85,33 @@
   }
 
   .footer-socials-block {
-    margin-left: 69px;
+    @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: inline-flex;
+    }
+    
+    
+
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 69px;
+    }
   }
-  
+  .tablet-container {
+
+    display: flex;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+  }
+
   .footer-socials__title { 
     margin-bottom: 20px;
 
@@ -39,6 +120,12 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: $second-text-accent-color;
+  }
+
+  .social-nets {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 60px;
+    }   
   }
   
   .social-nets__link--footer {
@@ -52,7 +139,21 @@
 /* footer subscribe-form */
 
   .sign {
+    @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-right: 0;
+    }
+  }
+
+  .sign__area {
+    @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    }
   }
   
   .sign__label {
@@ -68,10 +169,10 @@
   }
   
   .sign__field {
-    margin-right: 8px;
-    width: 358px;
+
+    width: 450px;
     height: 50px;
-    padding: 15px 16px;
+    padding-left: 16px;
 
     color: $body-background-color;
 
@@ -81,6 +182,14 @@
     border-radius: 4px;
     
     outline: none;
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 20px;
+    }   
+    @media screen and (min-width: 1200px) { 
+      margin-right: 8px;
+      width: 358px;
+    }
   }
   
   .sign-btn__icon {

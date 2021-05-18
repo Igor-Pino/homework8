@@ -2,10 +2,12 @@
 
 .header {
     border-bottom: 1px solid $header-border-color;
-
-    &__nav {
-      display: flex;
-      align-items: center;
+   
+    @media screen and (min-width: 768px) {
+      &__nav {
+       display: flex;
+       align-items: center;
+      }
     }
   }
 
@@ -22,36 +24,76 @@
     &--footer {
       color: $second-text-accent-color;
     }
-  
-    &--header {
+
+    @media screen and (min-width: 768px) {
+      &--header {
+        margin-right: 88px;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      &--header {
       margin-right: 93px;
+      }
     }
   }
 
   .logo__part {
     color: $accent-text-color;
   }
+
+  .mobile-menu__btn {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  .mobile-menu__icon--close {
+    display: none;
+  }
+
+  .mobile-menu__btn.is-open .mobile-menu__icon--close{
+    display: block;
+  }
+
+  .mobile-menu__btn.is-open .mobile-menu__icon--menu{
+    display: none;
+  }
+
+  .mobile-menu {
+
+  }
+  
   
   /* site-nav */
   
   .site-nav {
+    @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
+    }
   }
   
   .nav-list {
+    @media screen and (min-width: 768px) {
     display: flex;
+    }
   }
   
   .nav-list__item:not(:last-child) {
+    @media screen and (min-width: 768px) {
     margin-right: 50px;
+    }
   }
   
   .nav-list__link {
     display: block;
-    position: relative;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    @media screen and (min-width: 768px) {
+      position: relative;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   
     text-decoration: none;
     color: $title-text-color;
@@ -116,24 +158,34 @@
   }
   
   .contacts-nav {
+    @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     margin-left: auto;
+    }
   }
   
   .contacts-nav__item {
+    @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: center;
-    align-items: center;
+     justify-content: center;
+     align-items: center;
 
-    &:not(:last-child) {
-      margin-right: 50px;
+      &:not(:last-child) {
+       margin-right: 50px;
+      }
     }
   }
   
   .contacts-nav__icon {
+    @media screen and (max-width: 767px){
+      display: none;
+    }
+    @media screen and (min-width: 768px) {
+    display: inline-block;
     fill: currentColor;
     margin-right: 10px;
+    }
   }
   
   

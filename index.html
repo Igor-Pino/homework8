@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Моя первая робота</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -21,10 +20,19 @@
 </head>
 
 <body>
-    <header class="header">
+    <!-- <header class="header">
         <div class="container header__nav">
+
             <nav class="site-nav">
                 <a href="" class="link logo logo--header"><span class="logo__part">Web</span>Studio</a>
+                <button type="button" class="data-menu-button is-open" aria-expanded="false" data-menu-button>
+                    <svg class="" width="40px" height="40px" aria-label="переключатель мобильного менюclass="icon" ">
+                        <use class="mobile-menu__icon--menu" href="./images/symbol-defs.svg#icon_menu"></use> 
+                        <use class="mobile-menu__icon--close" href="./images/symbol-defs.svg#icon_close"></use> 
+                    </svg>  
+    
+                </button>
+        
                 <ul class="list nav-list">
                     <li class="nav-list__item"><a href="./index.html" class="nav-list__link nav-list__link--current">Студия</a></li>
                     <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link">Портфолио</a></li>
@@ -52,16 +60,17 @@
                 </li>
             </ul>
         </div>
-    </header>
+        
+    </header> -->
  
  
     <main>
         <!--Секция герой-->
-        <section class="hero hero-block overlay">
+        <!-- <section class="hero hero-block overlay">
             <div class="container">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="btn hero__btn" data-modal-open>Заказать услугу</button>
-            </div>
+            </div> -->
         </section>
         <!--Секция наши особенности-->
         <section class="section features">
@@ -131,7 +140,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> 
         <!--Секция наши услуги-->
         <section class="section services">
             <div class="container">
@@ -163,7 +172,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> 
         <!--Секция наши сотрудники-->
         <section class="section team ">
             <div class="container">
@@ -328,7 +337,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> 
         <!-- Наши клиенты -->
         <section class="section">
             <div class="container clients">
@@ -385,9 +394,9 @@
                     </li>
                 </ul>
             </div>
-        </section>  
+        </section>    -->
         <!-- модальное окно -->
-        <div class="backdrop is-hidden" data-modal>
+        <!-- <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 
                 <button class="modal__close-btn" data-modal-close>
@@ -440,11 +449,12 @@
                 </form>
 
             </div>
-        </div>
+        </div> -->
     </main>
     <footer class="footer">
         <div class="container footer-container">
-
+        
+<div class="tablet-container">
             <div class="footer-contacts">
             <a href="./index.html" class="link logo logo--footer "><span class="logo__part">Web</span>Studio</a>
             <address>
@@ -490,6 +500,7 @@
                 </li>
              </ul>   
             </div>  
+        </div>
             
             
             <form class="sign">
@@ -511,8 +522,11 @@
         
         </div>
     </footer>
+
+
     <!--modal script  -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 

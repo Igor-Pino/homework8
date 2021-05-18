@@ -1,6 +1,15 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+   
+}
+
+
 
 
 body {
+    width: 100%;
     background-color: $body-background-color;
     color: $primary-text-color;
     font-family: $font-main;
@@ -9,9 +18,12 @@ body {
     
 }
 img {
+    display: block;
+    
     margin-right: auto;
     margin-left: auto;
-    display: block;
+    
+
     max-width: 100%;
     height: auto;
 }
